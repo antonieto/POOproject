@@ -12,6 +12,7 @@ class Cliente{
         string nacimiento;
         string sexo;
     public:
+        Cliente();
         void setInformacionPersonal(string rfc,string nombre,string direccion,int telefono,string nacimiento,string sexo);
     
 };
