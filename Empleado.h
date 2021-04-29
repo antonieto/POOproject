@@ -14,6 +14,8 @@ class Empleado{
         int id;
         int sucursal;
 
+    //Revisado 
+
     public:
         Empleado();
         void setInformacionPersonal(string, string, string, int, string, string, int,int);
