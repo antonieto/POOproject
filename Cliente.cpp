@@ -19,3 +19,20 @@ void Cliente::setInformacionPersonal(string rfc,string nombre,string direccion,i
     this->nacimiento = nacimiento;
     this->sexo = sexo;
 }
+
+
+//podemos poner en el main un for donde en un arreglo que contenga 
+//los clientes haga lo siguiente:
+//for (blabla bla){
+ //     cout<<"********************"<<endl;
+ //    cout<<"Información del cliente "<<cliente[i]<<" :"<<endl;
+//    cliente[i].imprimirInformacionPersonal();
+//}
+string Cliente::imprimirInformacionPersonal(){
+    cout<<"Nombre: "<<this->nombre<<endl;
+    cout<<"RFC: "<<this->rfc<<endl;
+    cout<<"Dirección: "<<this->direccion<<endl;
+    cout<<"Teléfono: "<<this->telefono<<endl;
+    cout<<"Nacimiento: "<<this->nacimiento<<endl;
+    cout<<"Sexo: "<<this->sexo<<endl;
+}
