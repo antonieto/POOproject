@@ -15,6 +15,6 @@ class Producto{
 
     public:
         Producto();
-        Producto(string, string,float, float,int,float,float);
+        Producto(string codigo, string nombre,float precioCompra, float precioVenta,int cantidadExistente,float peso,float tamaño);
 };
 #endif
