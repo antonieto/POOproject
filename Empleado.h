@@ -18,7 +18,7 @@ class Empleado{
 
     public:
         Empleado();
-        void setInformacionPersonal(string, string, string, int, string, string, int,int);
-        void transferir(int);
+        Empleado(string, string, string, int, string, string, int,int);
+        string imprimirInformacionPersonal();
 };
 #endif
