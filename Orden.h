@@ -2,19 +2,21 @@
 #ifndef ORDEN_H
 #define ORDEN_H 
 
-#include <Producto.h>
+#include "Producto.h" 
+#include "Empleado.h" 
+#include "Cliente.h"
 
 using namespace std;
 
 class Orden{
     private:
-        producto carro;
-        vendedor empleado;
-        cliente cliente;
+        Producto carro;
+        Empleado vendedor;
+        Cliente cliente;
         
 
     public:
         Orden();
-        Orden(producto,vendedor,cliente);
+        Orden(Producto,Empleado,Cliente);
 };
 #endif
