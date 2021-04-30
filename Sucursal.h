@@ -9,9 +9,9 @@ class Sucursal{
     private:
         Empleado* empleados;
         int idSucursal;
-        int cantidades[200];
         
     public:
+        int* cantidades;
         Sucursal();  
         Sucursal(Empleado*, int, int*); 
 };
