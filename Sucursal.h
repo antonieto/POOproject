@@ -2,23 +2,19 @@
 #ifndef ORDEN_H
 #define ORDEN_H 
 
-#include "Empleado.h"git
+#include "Empleado.h" 
 using namespace std;
 
 class Sucursal{
     private:
-        empleado empleados;
+        Empleado* empleados;
         int idSucursal;
-        producto inventario;
+        int cantidades[200];
         
     public:
-        Sucursal();
-        Sucursal(empleado,int,producto);
-        void agregaProducto();
-        void eliminaProducto(string);
-        void cantidadProductos(int);
-        void eliminarEmpleado(id);
-        void agregarEmpleado(id);
+        Sucursal();  
+        Sucursal(Empleado*, int, int*); 
+
 
 };
 #endif
