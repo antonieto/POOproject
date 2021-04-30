@@ -13,7 +13,7 @@ class Cliente{
         string sexo;
     public:
         Cliente();
-        void setInformacionPersonal(string rfc,string nombre,string direccion,int telefono,string nacimiento,string sexo);
+        Cliente(string rfc,string nombre,string direccion,int telefono,string nacimiento,string sexo);
         string imprimirInformacionPersonal();
 };
 #endif
