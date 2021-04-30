@@ -1,22 +1,23 @@
-#include <iostream> 
-#ifndef ORDEN_H
-#define ORDEN_H 
-
 #include "Producto.h" 
-#include "Empleado.h" 
 #include "Cliente.h"
+#include "Inventario.h"
 
-using namespace std;
+class Ordenes
+{
+//private:
 
-class Orden{
-    private:
-        Producto carro;
-        Empleado vendedor;
-        Cliente cliente;
-        
 
-    public:
-        Orden();
-        Orden(Producto,Empleado,Cliente);
+public:
+    int id;
+    Inventario inventarios;
+    Cliente cliente;
+    float total;
+    string formapago;
+    Ordenes();
+    Ordenes(int i, Inventario in, Cliente cl, float t, string fp);
+    void agregarProducto(string c, int cant, Inventario in_total);
+    void quitarProducto(string c);
+    void totalOrden();
+    void muestraDatos();   
+
 };
-#endif
