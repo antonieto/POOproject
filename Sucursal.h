@@ -14,7 +14,5 @@ class Sucursal{
     public:
         Sucursal();  
         Sucursal(Empleado*, int, int*); 
-
-
 };
 #endif
