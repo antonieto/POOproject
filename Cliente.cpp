@@ -11,7 +11,7 @@ Cliente::Cliente(){
     this->sexo = "";
 }
 
-void Cliente::setInformacionPersonal(string rfc,string nombre,string direccion,int telefono,string nacimiento,string sexo){
+Cliente::Cliente(string rfc,string nombre,string direccion,int telefono,string nacimiento,string sexo){
     this->rfc = rfc;
     this->nombre = nombre;
     this->direccion = direccion;
