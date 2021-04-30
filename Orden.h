@@ -1,13 +1,13 @@
-#include <iostream> 
-#ifndef ORDEN_H
-#define ORDEN_H 
-
 #include "Producto.h" 
-#include "Empleado.h" 
 #include "Cliente.h"
+#include "Inventario.h"
 
-using namespace std;
+class Ordenes
+{
+//private:
 
+
+<<<<<<< HEAD
 class Orden{
     private:
         Producto* carro;
@@ -36,3 +36,19 @@ class Orden{
     void muestraDatos();   
 
 }; */
+=======
+public:
+    int id;
+    Inventario inventarios;
+    Cliente cliente;
+    float total;
+    string formapago;
+    Ordenes();
+    Ordenes(int i, Inventario in, Cliente cl, float t, string fp);
+    void agregarProducto(string c, int cant, Inventario in_total);
+    void quitarProducto(string c);
+    void totalOrden();
+    void muestraDatos();   
+
+};
+>>>>>>> 858f9d9e153de144277aaacb9d1317c6496ac558

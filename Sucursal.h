@@ -11,7 +11,7 @@ class Sucursal{
         int idSucursal;
         
     public:
-        int* cantidades;
+        int* inventario;
         Sucursal();  
         Sucursal(Empleado*, int, int*); 
 };
